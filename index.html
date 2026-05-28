@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Streaming AI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Streaming AI</h1>
+
+    <p class="subtitulo">
+      Sistema inteligente de análise de espectadores usando DBSCAN
+    </p>
+
+    <div class="formulario">
+
+      <label>Horas assistidas por dia</label>
+      <input type="number" id="horasPorDia">
+
+      <label>Idade</label>
+      <input type="number" id="idade">
+
+      <label>Gênero favorito</label>
+      <select id="generoFavorito">
+        <option value="acao">Ação</option>
+        <option value="terror">Terror</option>
+        <option value="comedia">Comédia</option>
+        <option value="anime">Anime</option>
+        <option value="drama">Drama</option>
+      </select>
+
+      <label>Assiste no fim de semana?</label>
+      <select id="fimDeSemana">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+
+      <label>Nível de maratona</label>
+      <select id="maratona">
+        <option value="baixa">Baixa</option>
+        <option value="media">Média</option>
+        <option value="alta">Alta</option>
+      </select>
+
+      <label>Horário preferido</label>
+      <select id="horario">
+        <option value="manha">Manhã</option>
+        <option value="tarde">Tarde</option>
+        <option value="noite">Noite</option>
+        <option value="madrugada">Madrugada</option>
+      </select>
+
+      <button onclick="classificarUsuario()">
+        Analisar Usuário
+      </button>
+
+    </div>
+
+    <div id="resultado"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
